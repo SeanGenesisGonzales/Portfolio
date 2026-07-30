@@ -22,7 +22,6 @@ export default function Information() {
     },
   ];
 
-
   const SoftSkills = [
     {
       title: "Problem Solving",
@@ -46,56 +45,66 @@ export default function Information() {
     },
   ];
 
-  
-
   return (
-    <div className="w-[80vw] grid grid-cols-1 lg:gap-5 lg:grid-cols-2 h-fit border-b-2 border-LightMode py-[5vh] px-2 dark:border-DarkMode text-LightMode dark:text-DarkMode">
-      <div className="grid grid-rows-5 gap-5">
-        <div>
-          <p className=" font-black text-2xl">Basic Info</p>
+    <section className="w-[80vw] border-b-2 border-LightMode dark:border-DarkMode py-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
+        {/* Left Side */}
+        <div className="space-y-8">
           <div>
-            <p>📍 Lives in Timalan, Naic, Cavite</p>
-            <p>🏫 3rd-Year Student in Cavite State University</p>
-            <p>📚 Currently taking Bachelor of Science in Computer Science</p>
-            <p>💼 Open for Internship opportunities.</p>
+            <h2 className="text-2xl font-black mb-3">Basic Info</h2>
+
+            <div className="space-y-1">
+              <p>📍 Lives in Timalan, Naic, Cavite</p>
+              <p>🏫 3rd-Year Student in Cavite State University</p>
+              <p>📚 Currently taking Bachelor of Science in Computer Science</p>
+              <p>💼 Open for Internship Opportunities</p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-black mb-5">Soft Skills</h2>
+
+            <div className="space-y-6">
+              {SoftSkills.map((skill, index) => (
+                <div key={index} className="grid grid-cols-[60px_1fr] gap-4">
+                  <div className="flex justify-center">
+                    <div className="w-10 h-10 rounded-full border-2 border-LightMode dark:border-DarkMode flex items-center justify-center font-bold">
+                      {index + 1}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-bold">{skill.title}</h3>
+                    <p className="text-justify">{skill.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="row-span-4">
-          <p className=" font-black text-2xl">Soft Skills</p>
-          {SoftSkills.map((e, index) => (
-            <div className="grid grid-cols-10">
-              <div className="col-span-2 flex justify-center items-center">
-                <div className="h-10 w-10 flex font-black rounded-[50px] justify-center items-center dark:bg-LightMode border-2 border-LightMode dark:border-DarkMode">
-                  {index + 1}
+        {/* Right Side */}
+        <div>
+          <h2 className="text-2xl font-black mb-5">What I Do</h2>
+
+          <div className="space-y-6">
+            {WhatIDo.map((item, index) => (
+              <div key={index} className="grid grid-cols-[60px_1fr] gap-4">
+                <div className="flex justify-center">
+                  <div className="w-10 h-10 rounded-full bg-LightMode text-DarkMode dark:bg-DarkMode dark:text-LightMode flex items-center justify-center font-bold">
+                    {index + 1}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-bold">{item.title}</h3>
+                  <p className="text-justify">{item.desc}</p>
                 </div>
               </div>
-              <div className="col-span-8 flex flex-col">
-                <p className="font-bold">{e.title}</p>
-                <p className="text-justify">{e.desc}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-
-      <div className="flex flex-col gap-2">
-        <p className=" font-black text-2xl">What I Do</p>
-
-        {WhatIDo.map((e, index) => (
-          <div className="grid grid-cols-10">
-            <div className="col-span-2 flex justify-center items-center">
-              <div className="h-10 w-10 flex font-black rounded-[50px] justify-center items-center text-DarkMode bg-LightMode dark:text-LightMode dark:bg-DarkMode">
-                {index + 1}
-              </div>
-            </div>
-            <div className="col-span-8 flex flex-col">
-              <p className="font-bold">{e.title}</p>
-              <p className="text-justify">{e.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 }
