@@ -12,7 +12,7 @@ export default function AboutMe() {
           id="AboutMe"
           className="font-extrabold text-5xl md:text-7xl  font-['Times_New_Roman']">
           Hi, I'm Sean!
-        </p>  
+        </p>
         <p className="text-justify">
           I'm an aspiring <b>Full-Stack Web Developer</b> passionate about
           building modern, responsive, and user-friendly web applications. I

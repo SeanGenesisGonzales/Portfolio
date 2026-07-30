@@ -1,7 +1,7 @@
 export default function ListTech(ListTitle, array) {
   return (
     <div className="flex flex-col gap-3 justify-center items-center">
-      <p className="text-2xl font-black text-DarkMode font-['Times_New_Roman'] text-nowrap">
+      <p className="text-[1rem] font-black text-DarkMode font-['Times_New_Roman'] text-nowrap">
         {ListTitle}
       </p>
       <ol className="flex flex-row gap-2 flex-wrap justify-center">

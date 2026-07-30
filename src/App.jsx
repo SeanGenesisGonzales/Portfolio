@@ -3,6 +3,7 @@ import Nav from "./components/Nav.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import TechStack from "./components/TechStack.jsx";
 import Certifications from "./components/Certifications.jsx";
+import ContactMe from "./components/ContactMe"
 
 
 
@@ -17,6 +18,7 @@ export default function App() {
         <AboutMe />
         <TechStack />
         <Certifications />
+        <ContactMe/>
       </div>
     </>
   );
