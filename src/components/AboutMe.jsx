@@ -10,9 +10,9 @@ export default function AboutMe() {
       <div className="col-span-2 mt-5 md:mt-0 flex flex-col gap-5 justify-center items-center md:items-start text-LightMode dark:text-DarkMode">
         <p
           id="AboutMe"
-          className="font-extrabold text-5xl md:text-7xl  font-[garamond]">
+          className="font-extrabold text-5xl md:text-7xl  font-['Times_New_Roman']">
           Hi, I'm Sean!
-        </p>
+        </p>  
         <p className="text-justify">
           I'm an aspiring <b>Full-Stack Web Developer</b> passionate about
           building modern, responsive, and user-friendly web applications. I
