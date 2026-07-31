@@ -3,14 +3,15 @@ import Nav from "./components/Nav.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import TechStack from "./components/TechStack.jsx";
 import Certifications from "./components/Certifications.jsx";
-import ContactMe from "./components/ContactMe"
+import Footer from "./components/footer.jsx";
+
 
 
 
 export default function App() {
   return (
-    <>
-      <div className="backdrop-blur-xl bg-DarkMode dark:bg-LightMode  flex justify-center w-screen fixed z-50  transition-all">
+    <div className="transition-all flex flex-col items-center ">
+      <div className="bg-DarkMode dark:bg-LightMode  flex justify-center w-screen fixed z-50  transition-all">
         <Nav />
       </div>
 
@@ -18,8 +19,8 @@ export default function App() {
         <AboutMe />
         <TechStack />
         <Certifications />
-        <ContactMe/>
+        <Footer/>
       </div>
-    </>
+    </div>
   );
 }

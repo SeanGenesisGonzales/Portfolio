@@ -1,5 +1,6 @@
 import ListTech from "./TechStackComponents/TechList.jsx";
 
+
 export default function TechStack() {
   const FrontEnd = [
     "HTML",
@@ -22,12 +23,12 @@ export default function TechStack() {
 
   return (
     <div className="flex flex-col gap-[5vh] justify-center items-center border-y-2 border-DarkMode bg-LightMode w-screen py-[5vh] px-[10vw] ">
-      <p
-        id="TechStack"
-        className="font-extrabold text-5xl font-['Times_New_Roman']  text-DarkMode">
+      <p className="font-extrabold text-5xl font-['Times_New_Roman']  text-DarkMode">
         Tech Stack
       </p>
-      <div className="h-fit grid  gap-10 grid-cols-1 lg:grid-cols-4 pb-[5vh] ">
+      <div
+        id="TechStack"
+         className="h-fit grid px-2 lg:px-5 gap-10 grid-cols-1 lg:grid-cols-4 pb-[5vh] ">
         <div>{ListTech("Front-End Development", FrontEnd)}</div>
         <div>{ListTech("Back-End Development", BackEnd)}</div>
         <div>{ListTech("Database", Database)}</div>
