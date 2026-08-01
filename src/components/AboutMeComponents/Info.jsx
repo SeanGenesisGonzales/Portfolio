@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+
+import emailIcon from "../../assets/icons/email-1-svgrepo-com.svg";
+
 export default function Information() {
   const WhatIDo = [
     {
@@ -47,29 +50,53 @@ export default function Information() {
   ];
 
   return (
-    <section className="w-[80vw] px-2 lg:px-5  py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
-        {/* Left Side */}
-        <div className="space-y-8">
-          <div>
-            <h2 className="text-2xl font-black mb-3">Basic Info</h2>
-
-            <motion.div
+    <section className="w-[90vw] lg:w-[80vw] px-2 lg:px-5 gap-[2vh] py-12 grid grid-rows-5">
+      <div className="row-span-1 grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
+        <div>
+          <motion.div
               viewport={{ once: true, amount: 0.3 }}
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.3,
                 ease: "easeOut",
-              }}
+              }}>
+            <h2 className="text-2xl font-black mb-3">Basic Info</h2>
+
+            <div
               className="space-y-1">
-              <p>📍 Lives in Timalan Balsahan, Naic, Cavite</p>
+              <p className="flex items-center gap-3">
+                📍Lives in Timalan Balsahan, Naic, Cavite
+              </p>
               <p>🏫 3rd-Year Student in Cavite State University</p>
               <p>📚 Currently taking Bachelor of Science in Computer Science</p>
               <p>💼 Open for Internship Opportunities</p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+        </div>
 
+        <div>
+          <motion.div
+              viewport={{ once: true, amount: 0.3 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.3,
+                ease: "easeOut",
+              }}>
+            <h2 className="text-2xl font-black mb-3">Contacts</h2>
+
+            <div
+              className="space-y-1">
+              <p>📞: +63 935 625 0026</p>
+              <p>📧: gonzalesseagen@gmail.com</p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="row-span-4 grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
+        <div className="space-y-8">
           <div>
             <h2 className="text-2xl font-black mb-5">Soft Skills</h2>
 

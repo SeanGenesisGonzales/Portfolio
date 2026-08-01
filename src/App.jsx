@@ -10,7 +10,7 @@ import Footer from "./components/footer.jsx";
 
 export default function App() {
   return (
-    <div className="transition-all flex flex-col items-center ">
+    <div className="transition-all flex flex-col items-center font-[Arial]">
       <div className="bg-DarkMode dark:bg-LightMode  flex justify-center w-screen fixed z-50  transition-all">
         <Nav />
       </div>
