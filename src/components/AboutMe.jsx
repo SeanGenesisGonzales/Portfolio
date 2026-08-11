@@ -41,7 +41,7 @@ export default function AboutMe() {
             impactful solutions.
           </p>
 
-          <div className="flex  gap-4 p-2 flex-wrap w-full h-fit justify-center lg:justify-start">
+          <div className="flex gap-5 flex-wrap  h-fit justify-center items-center">
             <SocialLink
               href="https://www.facebook.com/SEYANNUMEROUNO"
               LinkName="Facebook"
