@@ -31,7 +31,7 @@ export default function AboutMe() {
             speed={1}
             repeat={0}
             cursor={true}
-            className="text-4xl lg:text-7xl font-black font-[Times_New_Roman] text-nowrap"
+            className="text-4xl lg:text-7xl font-black  text-nowrap"
           />
           <p className="text-justify">
             I'm an aspiring <b>Full-Stack Web Developer</b> passionate about
