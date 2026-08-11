@@ -34,14 +34,14 @@ export default function AboutMe() {
             className="text-4xl lg:text-7xl font-black  text-nowrap"
           />
           <p className="text-justify">
-            I'm an aspiring <b>Full-Stack Web Developer</b> passionate about
+            I'm an aspiring <span className="font-black ">Full-Stack Web Developer</span> passionate about
             building modern, responsive, and user-friendly web applications. I
             enjoy turning ideas into clean, functional, and engaging digital
             experiences while continuously improving my skills and creating
             impactful solutions.
           </p>
 
-          <div className="flex gap-2 p-2 flex-wrap">
+          <div className="flex  gap-4 p-2 flex-wrap w-full h-fit justify-center lg:justify-start">
             <SocialLink
               href="https://www.facebook.com/SEYANNUMEROUNO"
               LinkName="Facebook"
@@ -62,7 +62,7 @@ export default function AboutMe() {
             Download CV Here
           </a>*/}
 
-          <div className=" w-full flex justify-center italic font-light"> - "Per aspera ad astra" </div>
+          <div className=" w-full flex justify-center italic "> - "Per aspera ad astra" </div>
         </div>
       </div>
 

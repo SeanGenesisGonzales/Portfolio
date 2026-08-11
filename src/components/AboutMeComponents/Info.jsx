@@ -50,9 +50,9 @@ export default function Information() {
   ];
 
   return (
-    <section className="w-[90vw] lg:w-[80vw] px-2 lg:px-5 gap-[2vh] pt-5 grid grid-rows-5">
-      <div className="row-span-1 grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
-        <div>
+    <section className="w-[90vw] h-fit lg:w-[80vw] px-2 lg:px-5 pt-5 gap-0 md:gap-10 grid grid-rows-4 pb-5 lg:pb-0">
+      <div className=" row-span-1 grid grid-cols-1 lg:gap-5 lg:grid-cols-2 text-LightMode dark:text-DarkMode">
+        <div className="">
           <motion.div
             viewport={{ once: true, amount: 0.3 }}
             initial={{ opacity: 0, x: -100 }}
@@ -111,8 +111,8 @@ export default function Information() {
         </div>
       </div>
 
-      <div className="row-span-4 grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
-        <div className="space-y-8">
+      <div className="row-span-3 gap-4  grid grid-cols-1 lg:grid-cols-2 text-LightMode dark:text-DarkMode">
+        <div className="space-y-8 h-fit">
           <div>
             <h2 className="text-2xl font-black mb-5">Soft Skills</h2>
 
@@ -135,7 +135,7 @@ export default function Information() {
                   </div>
 
                   <div>
-                    <h3 className="font-bold">{skill.title}</h3>
+                    <h3 className="font-bold text-lg">{skill.title}</h3>
                     <p className="text-justify">{skill.desc}</p>
                   </div>
                 </motion.div>
@@ -146,9 +146,8 @@ export default function Information() {
 
         {/* Right Side */}
         <div>
-          <h2 className="text-2xl font-black mb-5">What I Do</h2>
-
           <div className="space-y-6">
+            <h2 className="text-2xl font-black mb-5">What I Do</h2>
             {WhatIDo.map((item, index) => (
               <motion.div
                 viewport={{ once: true, amount: 0.3 }}
@@ -167,7 +166,7 @@ export default function Information() {
                 </div>
 
                 <div>
-                  <h3 className="font-bold">{item.title}</h3>
+                  <h3 className="font-bold text-lg">{item.title}</h3>
                   <p className="text-justify">{item.desc}</p>
                 </div>
               </motion.div>

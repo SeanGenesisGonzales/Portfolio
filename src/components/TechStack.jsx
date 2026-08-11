@@ -18,7 +18,7 @@ export default function TechStack() {
     <div className="flex flex-col gap-[5vh] justify-center items-center border-y-2 border-DarkMode bg-LightMode w-screen py-[5vh] px-[10vw] ">
       <p
         id="TechStack"
-        className="font-extrabold text-5xl   text-DarkMode">
+        className="font-extrabold text-3xl text-DarkMode">
         Tech Stack
       </p>
       <div className="h-fit grid px-2 lg:px-5 gap-10 grid-cols-1 lg:grid-cols-4 pb-[5vh] ">

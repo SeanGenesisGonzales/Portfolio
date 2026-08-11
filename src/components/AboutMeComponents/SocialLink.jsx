@@ -1,10 +1,11 @@
+import { Link2 } from "lucide-react";
 export default function SocialLink({ href, LinkName }) {
   return (
     <a
       target="_blank"
       href={href}
-      className=" transition-all flex gap-1 font-bold text-md text-nowrap no-underline! text-LightMode hover:text-gray-700 dark:text-DarkMode dark:hover:text-DarkMode dark:hover:scale-110">
-      {LinkName} 🔗
+      className=" transition-all flex flex-nowrap justify-center items-center gap-1 text-nowrap hover:font-black">
+      {LinkName} <Link2/>
     </a>
   );
 }

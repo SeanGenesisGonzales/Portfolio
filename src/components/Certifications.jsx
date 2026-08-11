@@ -28,7 +28,7 @@ export default function Certifications() {
     <div className="h-fit w-[90vw] lg:w-[80vw] py-[5vh] gap-[5vh] flex flex-col items-center border-y-2 border-LightMode dark:border-DarkMode">
       <p
         id="Certification"
-        className="font-extrabold text-5xl text-LightMode dark:text-DarkMode">
+        className="font-extrabold text-3xl text-LightMode dark:text-DarkMode">
         Certifications
       </p>
 
