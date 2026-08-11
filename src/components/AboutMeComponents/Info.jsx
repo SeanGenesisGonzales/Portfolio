@@ -129,7 +129,7 @@ export default function Information() {
                   key={index}
                   className="grid grid-cols-[60px_1fr] gap-4">
                   <div className="flex justify-center">
-                    <div className="w-10 h-10 rounded-full border-2 border-LightMode dark:border-DarkMode flex items-center justify-center font-bold">
+                    <div className="select-none w-10 h-10 rounded-full border-2 border-LightMode dark:border-DarkMode flex items-center justify-center font-bold">
                       {index + 1}
                     </div>
                   </div>
@@ -160,7 +160,7 @@ export default function Information() {
                 key={index}
                 className="grid grid-cols-[60px_1fr] gap-4">
                 <div className="flex justify-center">
-                  <div className="w-10 h-10 rounded-full bg-LightMode text-DarkMode dark:bg-DarkMode dark:text-LightMode flex items-center justify-center font-bold">
+                  <div className="select-none w-10 h-10 rounded-full bg-LightMode text-DarkMode dark:bg-DarkMode dark:text-LightMode flex items-center justify-center font-bold">
                     {index + 1}
                   </div>
                 </div>

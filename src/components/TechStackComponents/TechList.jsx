@@ -14,7 +14,7 @@ export default function ListTech(ListTitle, array) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.1 * index + 0.3, ease: "linear" }}
             viewport={{ once: true, amount: 0.3 }}
-            className=" font-black px-5 py-1 flex w-fit rounded-[50px] justify-center items-center border-2 text-nowrap bg-DarkMode text-LightMode hover:bg-LightMode hover:text-DarkMode border-DarkMode  "
+            className="select-none font-black px-5 py-1 flex w-fit rounded-[50px] justify-center items-center border-2 text-nowrap bg-DarkMode text-LightMode hover:bg-LightMode hover:text-DarkMode border-DarkMode active:bg-LightMode active:text-DarkMode"
             key={index}>
             {e}
           </motion.div>

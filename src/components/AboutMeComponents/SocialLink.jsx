@@ -4,7 +4,7 @@ export default function SocialLink({ href, LinkName }) {
     <a
       target="_blank"
       href={href}
-      className=" transition-all flex flex-nowrap justify-center items-center gap-1 text-nowrap hover:font-black">
+      className=" transition-all flex flex-nowrap justify-center items-center gap-1 text-nowrap hover:font-black active:font-black">
       {LinkName} <Link2/>
     </a>
   );

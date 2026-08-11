@@ -12,12 +12,12 @@ export default function AboutMe() {
       <div className="grid gap-0 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-fit w-[90vw] lg:w-[80vw] px-2 lg:px-5 border-b-2 border-LightMode dark:border-DarkMode pb-[5vh]">
        
        
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <img
             id="AboutMe"
             src={Mypicture}
             alt=""
-            className="select-none w-fit  border-b-2 border-LightMode dark:border-DarkMode"
+            className="select-none w-[50vw] lg:w-fit h-fit border-b-2 border-LightMode dark:border-DarkMode"
           />
         </div>
 
