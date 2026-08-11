@@ -6,8 +6,8 @@
 
 @theme {
   --animate-fade-in: fade-in 0.6s ease-out forwards;
-  --color-LightMode: black;
-  --color-DarkMode: #ffffff;
+  --color-LightMode: rgba(15, 15, 15 , 1);
+  --color-DarkMode: rgba(254, 254, 254, 1);
 
   @keyframes navAnimation {
     from{width: 0;}

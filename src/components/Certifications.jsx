@@ -26,13 +26,13 @@ export default function Certifications() {
 
   return (
     <div className="h-fit w-[90vw] lg:w-[80vw] py-[5vh] gap-[5vh] flex flex-col items-center border-y-2 border-LightMode dark:border-DarkMode">
-      <p className="font-extrabold text-5xl   font-[Times_New_Roman] text-LightMode dark:text-DarkMode">
+      <p
+        id="Certification"
+        className="font-extrabold text-5xl text-LightMode dark:text-DarkMode">
         Certifications
       </p>
 
-      <div
-        id="Certification"
-        className="w-[80vw] px-2 lg:px-5 h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="w-[80vw] px-2 lg:px-5 h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {Certificates.map((certificate, index) => (
           <CertificateCard
             key={index}

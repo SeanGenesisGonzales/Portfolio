@@ -10,16 +10,16 @@ import Footer from "./components/footer.jsx";
 
 export default function App() {
   return (
-    <div className="transition-all flex flex-col items-center font-[Arial]">
-      <div className="bg-DarkMode dark:bg-LightMode  flex justify-center w-screen fixed z-50  transition-all">
+    <div className="transition-all flex flex-col items-center font-mono select-text selection:bg-LightMode selection:text-DarkMode dark:selection:bg-DarkMode dark:selection:text-LightMode">
+      <div className=" flex justify-center w-screen fixed z-50  transition-all">
         <Nav />
       </div>
 
-      <div className="flex pt-[10vh] lg:pt-[13vh] select-none flex-col gap-[5vh] items-center b h-screen w-screen  transition-all text-gray-500 overflow-x-hidden bg-DarkMode dark:bg-LightMode sticky scrollbar-none">
+      <div className="flex pt-[10vh] lg:pt-[13vh]  flex-col gap-[5vh] items-center b h-screen w-screen  transition-all text-gray-500 overflow-x-hidden bg-DarkMode dark:bg-LightMode sticky scrollbar-none">
         <AboutMe />
         <TechStack />
         <Certifications />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

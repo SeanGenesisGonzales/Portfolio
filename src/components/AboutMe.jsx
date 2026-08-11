@@ -17,7 +17,7 @@ export default function AboutMe() {
             id="AboutMe"
             src={Mypicture}
             alt=""
-            className=" w-fit  border-b-2 border-LightMode dark:border-DarkMode"
+            className="select-none w-fit  border-b-2 border-LightMode dark:border-DarkMode"
           />
         </div>
 
@@ -26,7 +26,7 @@ export default function AboutMe() {
 
         <div className="col-span-1 lg:col-span-3 mt-5 md:mt-0 flex flex-col gap-5 justify-center items-center md:items-start text-LightMode dark:text-DarkMode">
           <TypeAnimation
-            sequence={["Hello, I'm Sean!", 2000]}
+            sequence={["Sean Gonzales", 2000]}
             wrapper="h1"
             speed={1}
             repeat={0}

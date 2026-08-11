@@ -1,95 +1,111 @@
 import { motion } from "framer-motion";
+import { MapPin, University, BookOpenText, BriefcaseBusiness, Phone, Mail} from "lucide-react";
 
-import emailIcon from "../../assets/icons/email-1-svgrepo-com.svg";
 
 export default function Information() {
   const WhatIDo = [
     {
       title: "Full Stack Web Development",
-      desc: "I develop complete web applications from front end to back end, ensuring seamless functionality and performance.",
+      desc: "Build responsive, scalable web applications using modern frontend and backend technologies.",
     },
     {
       title: "Quality Assurance & Testing",
-      desc: "I test applications to identify bugs, verify functionality, and ensure a reliable, user-friendly experience across different devices and browsers.",
+      desc: "Test applications, identify issues, and ensure reliable, high-quality software.",
     },
     {
       title: "System Design",
-      desc: "I design efficient and scalable system architectures by planning application structure, database relationships, and workflows before development begins.",
+      desc: "Design efficient, maintainable, and scalable systems based on project requirements.",
     },
     {
       title: "Performance Optimization",
-      desc: "I optimize websites and applications to improve speed, responsiveness, and overall performance for a better user experience.",
+      desc: "Improve application speed, efficiency, and overall user experience.",
     },
     {
       title: "Maintenance & Support",
-      desc: "I maintain and improve existing applications by fixing bugs, adding new features, and ensuring long-term stability and reliability.",
+      desc: "Maintain applications, fix issues, and continuously improve system functionality.",
     },
   ];
 
   const SoftSkills = [
     {
       title: "Problem Solving",
-      desc: "I enjoy analyzing complex challenges and developing efficient, practical solutions to build reliable applications.",
+      desc: "Analyze challenges and develop practical, efficient solutions.",
     },
     {
       title: "Communication",
-      desc: "I communicate ideas clearly, collaborate effectively with teams, and translate technical concepts into understandable language.",
+      desc: "Communicate ideas clearly and collaborate effectively with others.",
     },
     {
       title: "Adaptability",
-      desc: "I quickly learn new technologies, frameworks, and tools to keep up with the ever-changing web development industry.",
+      desc: "Quickly learn new technologies and adapt to changing requirements.",
     },
     {
       title: "Attention to Detail",
-      desc: "I write clean, maintainable code and carefully test my work to ensure quality and minimize errors.",
+      desc: "Write clean code and carefully review work to minimize errors.",
     },
     {
       title: "Continuous Learning",
-      desc: "I am committed to improving my skills by exploring new technologies, building projects, and staying updated with industry best practices.",
+      desc: "Continuously improve skills through practice, projects, and new technologies.",
     },
   ];
 
   return (
-    <section className="w-[90vw] lg:w-[80vw] px-2 lg:px-5 gap-[2vh] py-12 grid grid-rows-5">
+    <section className="w-[90vw] lg:w-[80vw] px-2 lg:px-5 gap-[2vh] pt-5 grid grid-rows-5">
       <div className="row-span-1 grid grid-cols-1 lg:grid-cols-2 gap-12 text-LightMode dark:text-DarkMode">
         <div>
           <motion.div
-              viewport={{ once: true, amount: 0.3 }}
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeOut",
-              }}>
+            viewport={{ once: true, amount: 0.3 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeOut",
+            }}>
             <h2 className="text-2xl font-black mb-3">Basic Info</h2>
 
-            <div
-              className="space-y-1">
+            <div className="space-y-1">
               <p className="flex items-center gap-3">
-                📍Lives in Timalan Balsahan, Naic, Cavite
+                <MapPin /> Lives in Timalan Balsahan, Naic, Cavite
               </p>
-              <p>🏫 3rd-Year Student in Cavite State University</p>
-              <p>📚 Currently taking Bachelor of Science in Computer Science</p>
-              <p>💼 Open for Internship Opportunities</p>
+              <p className="flex items-center gap-3">
+                <University /> 3rd-Year Student in Cavite State University
+              </p>
+              <p className="flex items-center gap-3">
+                <BookOpenText /> Currently taking Bachelor of Science in
+                Computer Science
+              </p>
+              <p className="flex items-center gap-3">
+                <BriefcaseBusiness /> Open for Internship Opportunities
+              </p>
             </div>
           </motion.div>
         </div>
 
         <div>
           <motion.div
-              viewport={{ once: true, amount: 0.3 }}
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeOut",
-              }}>
+            viewport={{ once: true, amount: 0.3 }}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeOut",
+            }}>
             <h2 className="text-2xl font-black mb-3">Contacts</h2>
 
-            <div
-              className="space-y-1">
-              <p>📞: +63 935 625 0026</p>
-              <p>📧: gonzalesseagen@gmail.com</p>
+            <div className="space-y-1">
+              <p className="flex items-center gap-3">
+                {" "}
+                <Phone />{" "}
+                <span className="select-text selection:bg-LightMode selection:text-DarkMode">
+                  + 63 935 625 0026
+                </span>
+              </p>
+              <p className="flex items-center gap-3">
+                <Mail />{" "}
+                <span className="select-text selection:bg-LightMode selection:text-DarkMode">
+                  gonzalesseagen@gmail.com
+                </span>
+              </p>
             </div>
           </motion.div>
         </div>

@@ -6,7 +6,7 @@ export default function ThemeButton() {
   return (
     <button
       onClick={toggleTheme}
-      className="text-LightMode cursor-pointer dark:text-DarkMode  py-3 px-3 rounded-[50px]  h-5  w-20 flex gap-1  justify-center items-center border-2 border-LightMode dark:border-DarkMode">
+      className="text-LightMode cursor-pointer dark:text-DarkMode  py-3 px-12.5  h-5  w-20 flex gap-1  justify-center items-center hover:font-black">
       {darkMode ? (
         <div className="flex gap-2 justify-center items-center">
           <p>Dark</p>

@@ -38,7 +38,7 @@ export default function Nav() {
                 block: "center",
               });
             }}
-            className="no-underline! cursor-pointer text-[1rem] lg:text-2xl font-['Times_New_Roman'] font-bold text-black dark:invert ">
+            className="no-underline! cursor-pointer text-[1rem] lg:text-2xl font-bold text-black dark:invert ">
             Sean Gonzales
           </motion.a>
         </div>

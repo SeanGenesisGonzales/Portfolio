@@ -4,7 +4,7 @@ motion
 export default function ListTech(ListTitle, array) {
   return (
     <div className="flex flex-col gap-3 justify-center items-center">
-      <p className="text-[1rem] font-black text-DarkMode font-['Times_New_Roman'] text-nowrap">
+      <p className="text-[1rem] font-black text-DarkMode  text-nowrap">
         {ListTitle}
       </p>
       <div className="flex flex-row gap-2 flex-wrap justify-center">
